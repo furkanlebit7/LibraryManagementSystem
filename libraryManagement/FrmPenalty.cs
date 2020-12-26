@@ -19,7 +19,8 @@ namespace libraryManagement
         DateTime thisDay = DateTime.Today.AddDays(5);
         private void FrmPenalty_Load(object sender, EventArgs e)
         {
-            label1.Text = thisDay.ToString();
+            DateTime start = new DateTime(2010, 6, 14);
+            label1.Text = start.ToString();
         }
     }
 }

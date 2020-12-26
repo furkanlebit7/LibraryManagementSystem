@@ -18,7 +18,7 @@ namespace libraryManagement
     {
 
 
-
+        public string librarianTC;
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
@@ -194,7 +194,14 @@ namespace libraryManagement
         private void ıconButtonLogOut_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColors.color11);
-            
+            DialogResult dialogResult = MessageBox.Show(" Are You Sure ? ", "Log Out", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                this.Close();
+                Frm_Login frL = new Frm_Login();
+                frL.Show();
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

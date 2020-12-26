@@ -18,23 +18,26 @@ namespace libraryManagement
             InitializeComponent();
         }
         sqlbaglantisi bgl = new sqlbaglantisi();
-        
+        Frm_Login frL = new Frm_Login();
+       // public string lTC;
+       public string libTC;
         private void FrmLibrarian_Load(object sender, EventArgs e)
         {
 
 
-            lblTC2.Text = "99482657261";
+            string lTC = frL.getLibrarian();
             //Gets information to the panel
-            SqlCommand GetLibrarian = new SqlCommand("Select LibrarianName,LibrarianSurname,LibrarianEmail,LibrarianGender,LibrarianPhone,LibrarianPicture From Tbl_Librarian where LibrarianTC=@p1", bgl.baglanti());
-            GetLibrarian.Parameters.AddWithValue("@p1", lblTC2.Text);
+            SqlCommand GetLibrarian = new SqlCommand("Select * From Tbl_Librarian where LibrarianTC=@p1", bgl.baglanti());
+            GetLibrarian.Parameters.AddWithValue("@p1", lTC);
             SqlDataReader GetLibrarianDr = GetLibrarian.ExecuteReader();
             while (GetLibrarianDr.Read())
             {
-                lblLibrarian2.Text = GetLibrarianDr[0] + " " + GetLibrarianDr[1];
-                lblMail2.Text = GetLibrarianDr[2].ToString();
-                lblGender2.Text = GetLibrarianDr[3].ToString();
-                lblPhone2.Text = GetLibrarianDr[4].ToString();
-                pictureBoxPic.ImageLocation = GetLibrarianDr[5].ToString();
+                lblLibrarian2.Text = GetLibrarianDr[1] + " " + GetLibrarianDr[2];
+                lblMail2.Text = GetLibrarianDr[3].ToString();
+                lblGender2.Text = GetLibrarianDr[4].ToString();
+                lblPhone2.Text = GetLibrarianDr[5].ToString();
+                lblTC2.Text = lTC;
+                pictureBoxPic.ImageLocation = GetLibrarianDr[8].ToString();
 
             }
 

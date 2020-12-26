@@ -268,7 +268,7 @@
             this.lblDosyaName.AutoSize = true;
             this.lblDosyaName.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblDosyaName.LinkColor = System.Drawing.Color.Aqua;
-            this.lblDosyaName.Location = new System.Drawing.Point(1207, 605);
+            this.lblDosyaName.Location = new System.Drawing.Point(1037, 201);
             this.lblDosyaName.Name = "lblDosyaName";
             this.lblDosyaName.Size = new System.Drawing.Size(114, 25);
             this.lblDosyaName.TabIndex = 15;

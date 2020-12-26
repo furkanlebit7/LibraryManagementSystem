@@ -36,6 +36,7 @@
             this.lblAva2 = new System.Windows.Forms.Label();
             this.lblShelf2 = new System.Windows.Forms.Label();
             this.lblQnt2 = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.lblPrice2 = new System.Windows.Forms.Label();
             this.lblCat2 = new System.Windows.Forms.Label();
             this.lblPub2 = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@
             this.lblPub = new System.Windows.Forms.Label();
             this.lblAuthor = new System.Windows.Forms.Label();
             this.lblRent = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.ıconButton1 = new FontAwesome.Sharp.IconButton();
@@ -97,7 +97,7 @@
             // 
             // pictureBoxPic
             // 
-            this.pictureBoxPic.Location = new System.Drawing.Point(841, 385);
+            this.pictureBoxPic.Location = new System.Drawing.Point(609, 104);
             this.pictureBoxPic.Name = "pictureBoxPic";
             this.pictureBoxPic.Size = new System.Drawing.Size(295, 282);
             this.pictureBoxPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -108,8 +108,10 @@
             // 
             this.groupBox1.Controls.Add(this.lblDetail2);
             this.groupBox1.Controls.Add(this.lblAva2);
+            this.groupBox1.Controls.Add(this.pictureBoxPic);
             this.groupBox1.Controls.Add(this.lblShelf2);
             this.groupBox1.Controls.Add(this.lblQnt2);
+            this.groupBox1.Controls.Add(this.lblName);
             this.groupBox1.Controls.Add(this.lblPrice2);
             this.groupBox1.Controls.Add(this.lblCat2);
             this.groupBox1.Controls.Add(this.lblPub2);
@@ -128,10 +130,11 @@
             this.groupBox1.ForeColor = System.Drawing.Color.Gainsboro;
             this.groupBox1.Location = new System.Drawing.Point(252, 281);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(530, 471);
+            this.groupBox1.Size = new System.Drawing.Size(958, 471);
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Book Informations";
+            this.groupBox1.Visible = false;
             // 
             // lblDetail2
             // 
@@ -166,6 +169,19 @@
             this.lblQnt2.Name = "lblQnt2";
             this.lblQnt2.Size = new System.Drawing.Size(0, 23);
             this.lblQnt2.TabIndex = 29;
+            // 
+            // lblName
+            // 
+            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblName.Location = new System.Drawing.Point(603, 48);
+            this.lblName.MaximumSize = new System.Drawing.Size(0, 31);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(180, 31);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Book Name ";
             // 
             // lblPrice2
             // 
@@ -288,17 +304,6 @@
             this.lblRent.Size = new System.Drawing.Size(62, 23);
             this.lblRent.TabIndex = 2;
             this.lblRent.Text = "Rent :";
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblName.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblName.Location = new System.Drawing.Point(902, 329);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(180, 31);
-            this.lblName.TabIndex = 0;
-            this.lblName.Text = "Book Name ";
             // 
             // groupBox3
             // 
@@ -487,10 +492,8 @@
             this.ClientSize = new System.Drawing.Size(1325, 896);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.pictureBoxPic);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblName);
             this.Name = "FrmIssueBook";
             this.Text = "Issue Book";
             this.Load += new System.EventHandler(this.FrmIssueBook_Load);
@@ -504,7 +507,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

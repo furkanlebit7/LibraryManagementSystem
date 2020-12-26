@@ -96,9 +96,9 @@
             this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAdd.IconSize = 40;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(325, 175);
+            this.btnAdd.Location = new System.Drawing.Point(287, 175);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(158, 40);
+            this.btnAdd.Size = new System.Drawing.Size(235, 40);
             this.btnAdd.TabIndex = 19;
             this.btnAdd.Text = "Add";
             this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;

@@ -129,6 +129,7 @@
             this.lblDosyaName.TabIndex = 15;
             this.lblDosyaName.TabStop = true;
             this.lblDosyaName.Text = "  Dosya.jpg";
+            this.lblDosyaName.Visible = false;
             // 
             // btnPicture
             // 

@@ -46,6 +46,8 @@ namespace libraryManagement
             this.lblGender = new System.Windows.Forms.Label();
             this.lblMail = new System.Windows.Forms.Label();
             this.lblLibrarian = new System.Windows.Forms.Label();
+            this.lblID = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPic)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -76,11 +78,12 @@ namespace libraryManagement
             // btnEdit
             // 
             this.btnEdit.Font = new System.Drawing.Font("MV Boli", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.Black;
             this.btnEdit.IconChar = FontAwesome.Sharp.IconChar.Edit;
             this.btnEdit.IconColor = System.Drawing.Color.Black;
             this.btnEdit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(861, 589);
+            this.btnEdit.Location = new System.Drawing.Point(604, 360);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(259, 47);
             this.btnEdit.TabIndex = 10;
@@ -92,7 +95,7 @@ namespace libraryManagement
             // 
             // pictureBoxPic
             // 
-            this.pictureBoxPic.Location = new System.Drawing.Point(861, 273);
+            this.pictureBoxPic.Location = new System.Drawing.Point(604, 44);
             this.pictureBoxPic.Name = "pictureBoxPic";
             this.pictureBoxPic.Size = new System.Drawing.Size(259, 271);
             this.pictureBoxPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -101,6 +104,10 @@ namespace libraryManagement
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnEdit);
+            this.groupBox1.Controls.Add(this.lblID);
+            this.groupBox1.Controls.Add(this.pictureBoxPic);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.lblDepartment2);
             this.groupBox1.Controls.Add(this.lblDepartment);
             this.groupBox1.Controls.Add(this.lblTC2);
@@ -117,7 +124,7 @@ namespace libraryManagement
             this.groupBox1.ForeColor = System.Drawing.Color.Gainsboro;
             this.groupBox1.Location = new System.Drawing.Point(316, 261);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(475, 451);
+            this.groupBox1.Size = new System.Drawing.Size(951, 451);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Student Informations";
@@ -125,16 +132,15 @@ namespace libraryManagement
             // lblDepartment2
             // 
             this.lblDepartment2.AutoSize = true;
-            this.lblDepartment2.Location = new System.Drawing.Point(211, 373);
+            this.lblDepartment2.Location = new System.Drawing.Point(211, 386);
             this.lblDepartment2.Name = "lblDepartment2";
-            this.lblDepartment2.Size = new System.Drawing.Size(127, 23);
+            this.lblDepartment2.Size = new System.Drawing.Size(0, 23);
             this.lblDepartment2.TabIndex = 23;
-            this.lblDepartment2.Text = "Department :";
             // 
             // lblDepartment
             // 
             this.lblDepartment.AutoSize = true;
-            this.lblDepartment.Location = new System.Drawing.Point(16, 373);
+            this.lblDepartment.Location = new System.Drawing.Point(23, 386);
             this.lblDepartment.Name = "lblDepartment";
             this.lblDepartment.Size = new System.Drawing.Size(127, 23);
             this.lblDepartment.TabIndex = 22;
@@ -143,52 +149,47 @@ namespace libraryManagement
             // lblTC2
             // 
             this.lblTC2.AutoSize = true;
-            this.lblTC2.Location = new System.Drawing.Point(211, 320);
+            this.lblTC2.Location = new System.Drawing.Point(211, 329);
             this.lblTC2.Name = "lblTC2";
-            this.lblTC2.Size = new System.Drawing.Size(39, 23);
+            this.lblTC2.Size = new System.Drawing.Size(0, 23);
             this.lblTC2.TabIndex = 21;
-            this.lblTC2.Text = "TC ";
             // 
             // lblPhone2
             // 
             this.lblPhone2.AutoSize = true;
-            this.lblPhone2.Location = new System.Drawing.Point(211, 260);
+            this.lblPhone2.Location = new System.Drawing.Point(211, 272);
             this.lblPhone2.Name = "lblPhone2";
-            this.lblPhone2.Size = new System.Drawing.Size(68, 23);
+            this.lblPhone2.Size = new System.Drawing.Size(0, 23);
             this.lblPhone2.TabIndex = 20;
-            this.lblPhone2.Text = "Phone ";
             // 
             // lblGender2
             // 
             this.lblGender2.AutoSize = true;
-            this.lblGender2.Location = new System.Drawing.Point(211, 191);
+            this.lblGender2.Location = new System.Drawing.Point(211, 215);
             this.lblGender2.Name = "lblGender2";
-            this.lblGender2.Size = new System.Drawing.Size(78, 23);
+            this.lblGender2.Size = new System.Drawing.Size(0, 23);
             this.lblGender2.TabIndex = 19;
-            this.lblGender2.Text = "Gender ";
             // 
             // lblMail2
             // 
             this.lblMail2.AutoSize = true;
-            this.lblMail2.Location = new System.Drawing.Point(211, 131);
+            this.lblMail2.Location = new System.Drawing.Point(211, 158);
             this.lblMail2.Name = "lblMail2";
-            this.lblMail2.Size = new System.Drawing.Size(73, 23);
+            this.lblMail2.Size = new System.Drawing.Size(0, 23);
             this.lblMail2.TabIndex = 18;
-            this.lblMail2.Text = "E-mail ";
             // 
             // lblLibrarian2
             // 
             this.lblLibrarian2.AutoSize = true;
-            this.lblLibrarian2.Location = new System.Drawing.Point(211, 69);
+            this.lblLibrarian2.Location = new System.Drawing.Point(211, 101);
             this.lblLibrarian2.Name = "lblLibrarian2";
-            this.lblLibrarian2.Size = new System.Drawing.Size(141, 23);
+            this.lblLibrarian2.Size = new System.Drawing.Size(0, 23);
             this.lblLibrarian2.TabIndex = 17;
-            this.lblLibrarian2.Text = "NameSurname";
             // 
             // lblTC
             // 
             this.lblTC.AutoSize = true;
-            this.lblTC.Location = new System.Drawing.Point(16, 320);
+            this.lblTC.Location = new System.Drawing.Point(104, 329);
             this.lblTC.Name = "lblTC";
             this.lblTC.Size = new System.Drawing.Size(46, 23);
             this.lblTC.TabIndex = 10;
@@ -197,7 +198,7 @@ namespace libraryManagement
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(16, 260);
+            this.lblPhone.Location = new System.Drawing.Point(75, 272);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(75, 23);
             this.lblPhone.TabIndex = 8;
@@ -206,7 +207,7 @@ namespace libraryManagement
             // lblGender
             // 
             this.lblGender.AutoSize = true;
-            this.lblGender.Location = new System.Drawing.Point(16, 191);
+            this.lblGender.Location = new System.Drawing.Point(65, 215);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(85, 23);
             this.lblGender.TabIndex = 6;
@@ -215,7 +216,7 @@ namespace libraryManagement
             // lblMail
             // 
             this.lblMail.AutoSize = true;
-            this.lblMail.Location = new System.Drawing.Point(16, 131);
+            this.lblMail.Location = new System.Drawing.Point(70, 158);
             this.lblMail.Name = "lblMail";
             this.lblMail.Size = new System.Drawing.Size(80, 23);
             this.lblMail.TabIndex = 4;
@@ -224,11 +225,28 @@ namespace libraryManagement
             // lblLibrarian
             // 
             this.lblLibrarian.AutoSize = true;
-            this.lblLibrarian.Location = new System.Drawing.Point(16, 69);
+            this.lblLibrarian.Location = new System.Drawing.Point(61, 101);
             this.lblLibrarian.Name = "lblLibrarian";
             this.lblLibrarian.Size = new System.Drawing.Size(89, 23);
             this.lblLibrarian.TabIndex = 2;
             this.lblLibrarian.Text = "Student :";
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Location = new System.Drawing.Point(211, 44);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(0, 23);
+            this.lblID.TabIndex = 25;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(107, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 23);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "ID :";
             // 
             // FrmStudentAccount
             // 
@@ -236,8 +254,6 @@ namespace libraryManagement
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(1325, 896);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.pictureBoxPic);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.Name = "FrmStudentAccount";
@@ -271,5 +287,7 @@ namespace libraryManagement
         private System.Windows.Forms.Label lblGender;
         private System.Windows.Forms.Label lblMail;
         private System.Windows.Forms.Label lblLibrarian;
+        private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Label label2;
     }
 }

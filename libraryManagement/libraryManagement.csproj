@@ -157,6 +157,12 @@
     <Compile Include="FrmStudentReport.Designer.cs">
       <DependentUpon>FrmStudentReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="imports.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -212,6 +218,9 @@
     <EmbeddedResource Include="FrmStudentReport.resx">
       <DependentUpon>FrmStudentReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -249,6 +258,8 @@
     <None Include="Resources\open-book-png-vectors-and-clipart-for-free-download-162538.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+    <None Include="Resources\pngwing.com %281%29.png" />
     <None Include="Resources\11.jpg" />
     <None Include="Resources\22.jpg" />
     <None Include="Resources\331.jpg" />

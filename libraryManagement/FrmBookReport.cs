@@ -41,6 +41,8 @@ namespace libraryManagement
 
         private void ıconButton1_Click(object sender, EventArgs e)
         {
+            groupBox1.Visible = false;
+            dataGridView1.Visible = true;
             //Add books on data dable
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter("Select BookID, BookName, BookAuthor, BookPublication,BookCategories From Tbl_Book where BookPublication='"+cmbPublication.Text+"' and BookCategories='"+cmbCategories.Text+"' ",bgl.baglanti());

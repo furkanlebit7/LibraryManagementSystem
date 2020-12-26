@@ -40,9 +40,7 @@
             this.ıconButtonAddStudent = new FontAwesome.Sharp.IconButton();
             this.ıconButtonStudentReport = new FontAwesome.Sharp.IconButton();
             this.ıconButtonIssueBook = new FontAwesome.Sharp.IconButton();
-            this.ıconButtonIssueReport = new FontAwesome.Sharp.IconButton();
             this.ıconButtonReturnBook = new FontAwesome.Sharp.IconButton();
-            this.ıconButtonPenalty = new FontAwesome.Sharp.IconButton();
             this.ıconButtonLogOut = new FontAwesome.Sharp.IconButton();
             this.panelTop = new System.Windows.Forms.Panel();
             this.LblHome = new System.Windows.Forms.Label();
@@ -67,9 +65,7 @@
             this.panelMenu.Controls.Add(this.ıconButtonAddStudent);
             this.panelMenu.Controls.Add(this.ıconButtonStudentReport);
             this.panelMenu.Controls.Add(this.ıconButtonIssueBook);
-            this.panelMenu.Controls.Add(this.ıconButtonIssueReport);
             this.panelMenu.Controls.Add(this.ıconButtonReturnBook);
-            this.panelMenu.Controls.Add(this.ıconButtonPenalty);
             this.panelMenu.Controls.Add(this.ıconButtonLogOut);
             this.panelMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -290,30 +286,6 @@
             this.ıconButtonIssueBook.UseVisualStyleBackColor = true;
             this.ıconButtonIssueBook.Click += new System.EventHandler(this.ıconButtonIssueBook_Click);
             // 
-            // ıconButtonIssueReport
-            // 
-            this.ıconButtonIssueReport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ıconButtonIssueReport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ıconButtonIssueReport.FlatAppearance.BorderSize = 0;
-            this.ıconButtonIssueReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ıconButtonIssueReport.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ıconButtonIssueReport.ForeColor = System.Drawing.Color.Gainsboro;
-            this.ıconButtonIssueReport.IconChar = FontAwesome.Sharp.IconChar.UserClock;
-            this.ıconButtonIssueReport.IconColor = System.Drawing.Color.Gainsboro;
-            this.ıconButtonIssueReport.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconButtonIssueReport.IconSize = 32;
-            this.ıconButtonIssueReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButtonIssueReport.Location = new System.Drawing.Point(3, 667);
-            this.ıconButtonIssueReport.Name = "ıconButtonIssueReport";
-            this.ıconButtonIssueReport.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.ıconButtonIssueReport.Size = new System.Drawing.Size(350, 70);
-            this.ıconButtonIssueReport.TabIndex = 8;
-            this.ıconButtonIssueReport.Text = "Issue Report";
-            this.ıconButtonIssueReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButtonIssueReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ıconButtonIssueReport.UseVisualStyleBackColor = true;
-            this.ıconButtonIssueReport.Click += new System.EventHandler(this.ıconButtonIssueReport_Click);
-            // 
             // ıconButtonReturnBook
             // 
             this.ıconButtonReturnBook.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -327,7 +299,7 @@
             this.ıconButtonReturnBook.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ıconButtonReturnBook.IconSize = 32;
             this.ıconButtonReturnBook.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButtonReturnBook.Location = new System.Drawing.Point(3, 743);
+            this.ıconButtonReturnBook.Location = new System.Drawing.Point(3, 667);
             this.ıconButtonReturnBook.Name = "ıconButtonReturnBook";
             this.ıconButtonReturnBook.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.ıconButtonReturnBook.Size = new System.Drawing.Size(350, 70);
@@ -337,30 +309,6 @@
             this.ıconButtonReturnBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ıconButtonReturnBook.UseVisualStyleBackColor = true;
             this.ıconButtonReturnBook.Click += new System.EventHandler(this.ıconButtonReturnBook_Click);
-            // 
-            // ıconButtonPenalty
-            // 
-            this.ıconButtonPenalty.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ıconButtonPenalty.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ıconButtonPenalty.FlatAppearance.BorderSize = 0;
-            this.ıconButtonPenalty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ıconButtonPenalty.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ıconButtonPenalty.ForeColor = System.Drawing.Color.Gainsboro;
-            this.ıconButtonPenalty.IconChar = FontAwesome.Sharp.IconChar.Bomb;
-            this.ıconButtonPenalty.IconColor = System.Drawing.Color.Gainsboro;
-            this.ıconButtonPenalty.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconButtonPenalty.IconSize = 32;
-            this.ıconButtonPenalty.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButtonPenalty.Location = new System.Drawing.Point(3, 819);
-            this.ıconButtonPenalty.Name = "ıconButtonPenalty";
-            this.ıconButtonPenalty.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.ıconButtonPenalty.Size = new System.Drawing.Size(350, 70);
-            this.ıconButtonPenalty.TabIndex = 10;
-            this.ıconButtonPenalty.Text = "Penalty";
-            this.ıconButtonPenalty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButtonPenalty.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ıconButtonPenalty.UseVisualStyleBackColor = true;
-            this.ıconButtonPenalty.Click += new System.EventHandler(this.ıconButtonPenalty_Click);
             // 
             // ıconButtonLogOut
             // 
@@ -374,7 +322,7 @@
             this.ıconButtonLogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ıconButtonLogOut.IconSize = 32;
             this.ıconButtonLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButtonLogOut.Location = new System.Drawing.Point(3, 895);
+            this.ıconButtonLogOut.Location = new System.Drawing.Point(3, 743);
             this.ıconButtonLogOut.Name = "ıconButtonLogOut";
             this.ıconButtonLogOut.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.ıconButtonLogOut.Size = new System.Drawing.Size(350, 70);
@@ -480,9 +428,7 @@
         private FontAwesome.Sharp.IconButton ıconButtonAddStudent;
         private FontAwesome.Sharp.IconButton ıconButtonStudentReport;
         private FontAwesome.Sharp.IconButton ıconButtonIssueBook;
-        private FontAwesome.Sharp.IconButton ıconButtonIssueReport;
         private FontAwesome.Sharp.IconButton ıconButtonReturnBook;
-        private FontAwesome.Sharp.IconButton ıconButtonPenalty;
         private FontAwesome.Sharp.IconButton ıconButtonLogOut;
         private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.Label LblHome;

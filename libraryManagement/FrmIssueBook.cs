@@ -62,6 +62,7 @@ namespace libraryManagement
 
         private void ıconButton1_Click(object sender, EventArgs e)
         {
+            groupBox1.Visible = true;
             SqlCommand getBook = new SqlCommand("Select * From Tbl_Book where BookName=@p1", bgl.baglanti());
             getBook.Parameters.AddWithValue("@p1", cmbBook.Text);
             SqlDataReader drGetBook = getBook.ExecuteReader();

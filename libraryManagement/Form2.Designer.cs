@@ -30,14 +30,13 @@ namespace libraryManagement
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.BtnLogOut = new FontAwesome.Sharp.IconButton();
+            this.btnBookReport = new FontAwesome.Sharp.IconButton();
+            this.btnMyAccount = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.PictureBox();
-            this.btnMyAccount = new FontAwesome.Sharp.IconButton();
-            this.btnBookReport = new FontAwesome.Sharp.IconButton();
-            this.btnPenaltyReport = new FontAwesome.Sharp.IconButton();
-            this.BtnLogOut = new FontAwesome.Sharp.IconButton();
             this.panelTop = new System.Windows.Forms.Panel();
             this.LblHome = new System.Windows.Forms.Label();
             this.ıconPictureBoxCurrent = new FontAwesome.Sharp.IconPictureBox();
@@ -55,7 +54,6 @@ namespace libraryManagement
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.panelMenu.Controls.Add(this.BtnLogOut);
-            this.panelMenu.Controls.Add(this.btnPenaltyReport);
             this.panelMenu.Controls.Add(this.btnBookReport);
             this.panelMenu.Controls.Add(this.btnMyAccount);
             this.panelMenu.Controls.Add(this.panelLogo);
@@ -64,6 +62,78 @@ namespace libraryManagement
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(350, 1024);
             this.panelMenu.TabIndex = 0;
+            // 
+            // BtnLogOut
+            // 
+            this.BtnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnLogOut.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnLogOut.FlatAppearance.BorderSize = 0;
+            this.BtnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLogOut.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogOut.ForeColor = System.Drawing.Color.Gainsboro;
+            this.BtnLogOut.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.BtnLogOut.IconColor = System.Drawing.Color.Gainsboro;
+            this.BtnLogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnLogOut.IconSize = 32;
+            this.BtnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnLogOut.Location = new System.Drawing.Point(0, 266);
+            this.BtnLogOut.Name = "BtnLogOut";
+            this.BtnLogOut.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.BtnLogOut.Size = new System.Drawing.Size(350, 70);
+            this.BtnLogOut.TabIndex = 5;
+            this.BtnLogOut.Text = "Log Out";
+            this.BtnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnLogOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnLogOut.UseVisualStyleBackColor = true;
+            this.BtnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
+            // 
+            // btnBookReport
+            // 
+            this.btnBookReport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBookReport.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBookReport.FlatAppearance.BorderSize = 0;
+            this.btnBookReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBookReport.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookReport.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnBookReport.IconChar = FontAwesome.Sharp.IconChar.Book;
+            this.btnBookReport.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnBookReport.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBookReport.IconSize = 32;
+            this.btnBookReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBookReport.Location = new System.Drawing.Point(0, 196);
+            this.btnBookReport.Name = "btnBookReport";
+            this.btnBookReport.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnBookReport.Size = new System.Drawing.Size(350, 70);
+            this.btnBookReport.TabIndex = 3;
+            this.btnBookReport.Text = "Book Report";
+            this.btnBookReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBookReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBookReport.UseVisualStyleBackColor = true;
+            this.btnBookReport.Click += new System.EventHandler(this.btnBookReport_Click);
+            // 
+            // btnMyAccount
+            // 
+            this.btnMyAccount.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMyAccount.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMyAccount.FlatAppearance.BorderSize = 0;
+            this.btnMyAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMyAccount.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMyAccount.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnMyAccount.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.btnMyAccount.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnMyAccount.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMyAccount.IconSize = 32;
+            this.btnMyAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMyAccount.Location = new System.Drawing.Point(0, 126);
+            this.btnMyAccount.Name = "btnMyAccount";
+            this.btnMyAccount.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnMyAccount.Size = new System.Drawing.Size(350, 70);
+            this.btnMyAccount.TabIndex = 2;
+            this.btnMyAccount.Text = "My Account";
+            this.btnMyAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMyAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMyAccount.UseVisualStyleBackColor = true;
+            this.btnMyAccount.Click += new System.EventHandler(this.btnMyAccount_Click);
             // 
             // panelLogo
             // 
@@ -107,102 +177,6 @@ namespace libraryManagement
             this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnHome.TabIndex = 0;
             this.btnHome.TabStop = false;
-            // 
-            // btnMyAccount
-            // 
-            this.btnMyAccount.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMyAccount.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMyAccount.FlatAppearance.BorderSize = 0;
-            this.btnMyAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMyAccount.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMyAccount.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnMyAccount.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
-            this.btnMyAccount.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnMyAccount.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMyAccount.IconSize = 32;
-            this.btnMyAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMyAccount.Location = new System.Drawing.Point(0, 126);
-            this.btnMyAccount.Name = "btnMyAccount";
-            this.btnMyAccount.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnMyAccount.Size = new System.Drawing.Size(350, 70);
-            this.btnMyAccount.TabIndex = 2;
-            this.btnMyAccount.Text = "My Account";
-            this.btnMyAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMyAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMyAccount.UseVisualStyleBackColor = true;
-            this.btnMyAccount.Click += new System.EventHandler(this.btnMyAccount_Click);
-            // 
-            // btnBookReport
-            // 
-            this.btnBookReport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBookReport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBookReport.FlatAppearance.BorderSize = 0;
-            this.btnBookReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBookReport.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBookReport.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnBookReport.IconChar = FontAwesome.Sharp.IconChar.Book;
-            this.btnBookReport.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnBookReport.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBookReport.IconSize = 32;
-            this.btnBookReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBookReport.Location = new System.Drawing.Point(0, 196);
-            this.btnBookReport.Name = "btnBookReport";
-            this.btnBookReport.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnBookReport.Size = new System.Drawing.Size(350, 70);
-            this.btnBookReport.TabIndex = 3;
-            this.btnBookReport.Text = "Book Report";
-            this.btnBookReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBookReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBookReport.UseVisualStyleBackColor = true;
-            this.btnBookReport.Click += new System.EventHandler(this.btnBookReport_Click);
-            // 
-            // btnPenaltyReport
-            // 
-            this.btnPenaltyReport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPenaltyReport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPenaltyReport.FlatAppearance.BorderSize = 0;
-            this.btnPenaltyReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPenaltyReport.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPenaltyReport.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnPenaltyReport.IconChar = FontAwesome.Sharp.IconChar.Bomb;
-            this.btnPenaltyReport.IconColor = System.Drawing.Color.Gainsboro;
-            this.btnPenaltyReport.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnPenaltyReport.IconSize = 32;
-            this.btnPenaltyReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPenaltyReport.Location = new System.Drawing.Point(0, 266);
-            this.btnPenaltyReport.Name = "btnPenaltyReport";
-            this.btnPenaltyReport.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnPenaltyReport.Size = new System.Drawing.Size(350, 70);
-            this.btnPenaltyReport.TabIndex = 4;
-            this.btnPenaltyReport.Text = "Penalty Report";
-            this.btnPenaltyReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPenaltyReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPenaltyReport.UseVisualStyleBackColor = true;
-            this.btnPenaltyReport.Click += new System.EventHandler(this.btnPenaltyReport_Click);
-            // 
-            // BtnLogOut
-            // 
-            this.BtnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnLogOut.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnLogOut.FlatAppearance.BorderSize = 0;
-            this.BtnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLogOut.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLogOut.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnLogOut.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
-            this.BtnLogOut.IconColor = System.Drawing.Color.Gainsboro;
-            this.BtnLogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnLogOut.IconSize = 32;
-            this.BtnLogOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnLogOut.Location = new System.Drawing.Point(0, 336);
-            this.BtnLogOut.Name = "BtnLogOut";
-            this.BtnLogOut.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.BtnLogOut.Size = new System.Drawing.Size(350, 70);
-            this.BtnLogOut.TabIndex = 5;
-            this.BtnLogOut.Text = "Log Out";
-            this.BtnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnLogOut.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnLogOut.UseVisualStyleBackColor = true;
-            this.BtnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
             // 
             // panelTop
             // 
@@ -292,7 +266,6 @@ namespace libraryManagement
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btnHome;
         private FontAwesome.Sharp.IconButton BtnLogOut;
-        private FontAwesome.Sharp.IconButton btnPenaltyReport;
         private FontAwesome.Sharp.IconButton btnBookReport;
         private FontAwesome.Sharp.IconButton btnMyAccount;
         private System.Windows.Forms.Panel panelTop;

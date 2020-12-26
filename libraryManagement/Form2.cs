@@ -138,7 +138,15 @@ namespace libraryManagement
 
         private void BtnLogOut_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult dialogResult = MessageBox.Show(" Are You Sure ? ", "Log Out", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Frm_Login frL = new Frm_Login();
+                frL.Show();
+                this.Close();
+            }
         }
+
+
     }
 }

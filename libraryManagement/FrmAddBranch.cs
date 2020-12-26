@@ -88,5 +88,7 @@ namespace libraryManagement
             MessageBox.Show("Categorie Deleted Succesfully");
             bgl.baglanti().Close();
         }
+
+       
     }
 }
